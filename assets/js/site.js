@@ -129,13 +129,20 @@
   }
 
   function hero() {
-    const words = ['the future?', 'people not yet born?', 'the year 2126?', 'a warming planet?', 'each other?'];
+    const words = [
+      'Who cares about future generations?',
+      'Does the moral circle stand the test of time?',
+      'What moves people to act on climate change?',
+      'Can concern for the future bridge political divides?',
+      'What drives extraordinary altruism?',
+      'How far into the future does our moral concern reach?',
+    ];
     const rot = $('.rot'); let i = 0;
     if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
       setInterval(() => {
         rot.classList.add('out');
         setTimeout(() => { rot.textContent = words[++i % words.length]; rot.classList.remove('out'); }, 360);
-      }, 2800);
+      }, 4200);
     }
     // Generations drifting toward the future: nodes flow left to right, linked to their neighbors.
     const cv = $('.hero canvas'), cx = cv.getContext('2d');
