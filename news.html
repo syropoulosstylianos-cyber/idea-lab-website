@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News | IDEA Lab</title>
+<meta name="description" content="Publications, awards, grants, talks and public outreach from the IDEA Lab.">
+<meta property="og:title" content="News | IDEA Lab">
+<meta property="og:description" content="Publications, awards, grants, talks and public outreach from the IDEA Lab.">
+<meta property="og:image" content="assets/img/idea-lab-logo.png">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<script>try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="news">
+<header id="nav"></header>
+<main>
+<section class="page-head"><div class="wrap">
+  <span class="eyebrow">News</span>
+  <h1>What's <em>new.</em></h1>
+  <p class="lede">Papers, grants, awards, talks and media. Filter by type or search for a name.</p>
+</div></section>
+<section class="section" style="padding-top:0"><div class="wrap">
+  <div class="controls">
+    <div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><label class="sr" for="q">Search news</label><input id="q" type="search" placeholder="Search news…" autocomplete="off"></div>
+    <div class="chips" id="cats"></div>
+  </div>
+  <div class="result-line" id="count"></div>
+  <div class="timeline" id="timeline"></div>
+</div></section>
+</main>
+<footer id="footer"></footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
