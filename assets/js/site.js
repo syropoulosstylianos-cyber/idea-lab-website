@@ -19,11 +19,11 @@
   const CATS = { publication: 'Publications', award: 'Awards & Grants', outreach: 'Public Outreach', presentation: 'Presentations', lab: 'Lab News' };
   const ICONS = {
     climate: '<circle cx="24" cy="24" r="17"/><path d="M7 24h34M24 7c7 6 7 28 0 34M24 7c-7 6-7 28 0 34"/><path d="M30 14c5 0 8 3 8 8" stroke-width="3.5"/>',
-    intergen: '<circle cx="12" cy="30" r="6"/><circle cx="26" cy="24" r="4.5"/><circle cx="38" cy="19" r="3"/><path d="M6 42c8-2 26-8 38-18" stroke-dasharray="2 5"/>',
+    intergen: '<circle cx="24" cy="12.5" r="9"/><path d="M15 12.5h18M24 3.5c4.5 5 4.5 13 0 18M24 3.5c-4.5 5-4.5 13 0 18" stroke-width="1.8"/><path d="M2 29.5L9 28.5L13 25.5C15 24 17.5 26 16 28L14.5 30L27 30.5C30 30.5 30 35.5 27 35.5L13 37.5L2 37.5Z" fill="currentColor" stroke-width="1.2"/><path d="M46 38.5L39 37.5L35 34.5C33 33 30.5 35 32 37L33.5 39L21 39.5C18 39.5 18 44.5 21 44.5L35 46.5L46 46.5Z" fill="currentColor" stroke-width="1.2" opacity=".6"/>',
     future: '<circle cx="24" cy="24" r="17"/><path d="M24 13v11l8 5"/><path d="M41 10l3-5M44 14l5-2" stroke-width="2"/>',
     morality: '<path d="M24 7v34M12 41h24M8 15h32"/><path d="M8 15l-5 12a5 5 0 0 0 10 0zM40 15l-5 12a5 5 0 0 0 10 0z"/>',
     prosocial: '<path d="M24 41S7 31 7 18a8.5 8.5 0 0 1 17-2 8.5 8.5 0 0 1 17 2c0 13-17 23-17 23z"/><path d="M17 23h14M24 16v14" stroke-width="2"/>',
-    intergroup: '<circle cx="17" cy="24" r="11"/><circle cx="31" cy="24" r="11"/>',
+    intergroup: '<path d="M33 9l11 4v9c0 9-4.5 14.5-11 18-6.5-3.5-11-9-11-18v-9z"/><path d="M33 16v17M27 23h12" stroke-width="2"/><path d="M4 44l22-22M6.5 34.5l7 7"/><path d="M19 12l-2-5M14 17l-5-2M25 8l1-4" stroke-width="2"/>',
   };
   const ico = (k) => `<svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[k]}</svg>`;
   const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -93,13 +93,6 @@
   async function home() {
     hero();
     const [pubs, news] = await Promise.all([load('publications'), load('news')]);
-    const latest = Math.max(...pubs.map((p) => p.year));
-    stats($('#stats'), [
-      [pubs.length, 'published papers'],
-      [pubs.filter((p) => p.year === latest).length, `papers in ${latest} alone`],
-      [pubs.filter((p) => p.mentee).length, 'papers co-authored with mentees'],
-      [new Set(pubs.map((p) => p.journal)).size, 'different journals'],
-    ]);
     const grid = $('#themes');
     grid.innerHTML = Object.entries(TOPICS).map(([k, t]) => {
       const n = pubs.filter((p) => p.topics.includes(k)).length;
