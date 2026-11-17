@@ -345,6 +345,9 @@ dialog::backdrop { background: rgba(4, 8, 20, .72); backdrop-filter: blur(4px); 
 footer { background: #060c1c; color: #c9d2e6; padding: 60px 0 40px; margin-top: 0; }
 footer .cols { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 34px; }
 footer h3 { color: #fff; font-size: 1.6rem; }
+.foot-id { display: flex; gap: 22px; align-items: flex-start; }
+.foot-id img { width: 140px; flex: none; background: #fff; border-radius: 16px; padding: 12px; }
+@media (max-width: 520px) { .foot-id { flex-direction: column; } }
 footer h4 { font: 600 .78rem var(--display); letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin: 0 0 12px; }
 footer a { color: #fff; text-decoration: none; display: block; padding: 3px 0; }
 footer a:hover { text-decoration: underline; }

@@ -51,8 +51,9 @@
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
   $('#footer').innerHTML = `<div class="wrap"><div class="cols">
-    <div><h3>Intergenerational Decisions and Effective Action Lab</h3>
-      <p style="margin-top:14px;max-width:44ch">College of Global Futures, Arizona State University. Directed by Stylianos Syropoulos.</p></div>
+    <div class="foot-id"><img src="assets/img/idea-lab-logo.png" alt="IDEA Lab logo" width="140">
+      <div><h3>Intergenerational Decisions and Effective Action Lab</h3>
+      <p style="margin-top:14px;max-width:44ch">College of Global Futures, Arizona State University. Directed by Dr. Stylianos Syropoulos.</p></div></div>
     <div><h4>Explore</h4>${NAV.map(([h, t]) => `<a href="${h}">${t}</a>`).join('')}</div>
     <div><h4>Connect</h4>
       <a href="mailto:${EMAIL}">${EMAIL}</a>
