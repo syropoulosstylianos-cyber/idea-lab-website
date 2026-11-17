@@ -3,7 +3,7 @@
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  const load = (name) => fetch(`data/${name}.json`).then((r) => r.json());
+  const load = (name) => fetch(`data/${name}.json`, { cache: "no-cache" }).then((r) => r.json());
   const page = document.body.dataset.page;
   const EMAIL = 'ssyropou@asu.edu';
   const VIZ = 'https://syropoulosstylianos-cyber.github.io/research-landscape/';
