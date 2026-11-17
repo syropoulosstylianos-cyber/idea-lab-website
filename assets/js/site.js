@@ -232,7 +232,7 @@
       $$('.ybar').forEach((b) => b.setAttribute('aria-pressed', +b.dataset.y === st.year));
       const active = st.q || st.topic || st.year || st.mentee || st.press;
       $('#count').innerHTML = `<span><b>${out.length}</b> ${out.length === 1 ? 'paper' : 'papers'}${active ? ` of ${pubs.length}` : ''}${st.year ? ` from ${st.year}` : ''}${st.topic ? ` on ${TOPICS[st.topic].name}` : ''}</span>${active ? '<button class="linkish" id="clear">Clear filters</button>' : ''}`;
-      $('#pubs').innerHTML = out.length ? out.map(card).join('') : '<p class="empty">Nothing matches that yet. Try a different search.</p>';
+      $('#pubs').innerHTML = out.length ? out.map(card).join('') : '<p class="empty">No results.</p>';
       const u = new URLSearchParams(); if (st.topic) u.set('topic', st.topic); if (st.year) u.set('year', st.year); if (st.q) u.set('q', st.q);
       history.replaceState(null, '', location.pathname + (u.size ? '?' + u : ''));
     };
@@ -297,7 +297,7 @@
         html += `<article class="tl-item" data-c="${x.cat}"><span class="tag" data-c="${x.cat}">${CATS[x.cat].replace(/s$/, '').replace('Awards & Grant', 'Award / Grant')}</span><p>${x.html}</p></article>`;
       }
       if (open) html += '</div></section>';
-      $('#timeline').innerHTML = html || '<p class="empty">Nothing matches that yet.</p>';
+      $('#timeline').innerHTML = html || '<p class="empty">No results.</p>';
       $('#count').innerHTML = `<span><b>${out.length}</b> ${out.length === 1 ? 'update' : 'updates'}</span>${st.cat || st.q ? '<button class="linkish" id="clear">Clear filters</button>' : ''}`;
       reveal();
     };
