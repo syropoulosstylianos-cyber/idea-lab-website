@@ -1,0 +1,22 @@
+[
+ {
+  "group": "At Arizona State University",
+  "items": [
+   { "name": "Center for the Study of Religion and Conflict", "url": "https://csrc.asu.edu/" },
+   { "name": "Lincoln Center for Applied Ethics", "url": "https://lincolncenter.asu.edu/" },
+   { "name": "Center for Behavior, Institutions and the Environment", "url": "https://globalfutures.asu.edu/cbie/" },
+   { "name": "Center for Science and the Imagination", "url": "https://csi.asu.edu/" },
+   { "name": "ASU Farm", "url": null }
+  ]
+ },
+ {
+  "group": "Beyond ASU",
+  "items": [
+   { "name": "Rare Entertainment Lab", "url": "https://rare.org/" },
+   { "name": "DearTomorrow", "url": "https://www.deartomorrow.org/" },
+   { "name": "MIT Applied Cooperation Initiative", "url": null },
+   { "name": "Think Beyond The Pump", "url": "https://thinkbeyondthepump.org/" },
+   { "name": "See Change Institute", "url": "https://seechangeinstitute.com/" }
+  ]
+ }
+]

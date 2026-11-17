@@ -29,7 +29,7 @@
   const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
   /* ---------- chrome: nav, footer, theme ---------- */
-  const NAV = [['index.html', 'Home', 'home'], ['research.html', 'Research', 'research'], ['people.html', 'People', 'people'], ['news.html', 'News', 'news'], ['lab-life.html', 'Lab Life', 'life']];
+  const NAV = [['index.html', 'Home', 'home'], ['research.html', 'Research', 'research'], ['people.html', 'People', 'people'], ['news.html', 'News', 'news'], ['lab-life.html', 'Lab Life', 'life'], ['partners.html', 'Partners', 'partners'], ['join.html', 'Join', 'join']];
   const bulb = '<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 3a9.5 9.5 0 0 0-5.5 17.2V24h11v-3.8A9.5 9.5 0 0 0 16 3z" stroke="#f2b33d" stroke-width="2.4"/><circle cx="16" cy="12.5" r="3.6" fill="#2f7fd0"/><path d="M12 27.5h8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';
   $('#nav').innerHTML = `<div class="wrap nav-in">
     <a class="brand" href="index.html">${bulb}<span>IDEA Lab</span></a>
@@ -334,6 +334,17 @@
     reveal();
   }
 
-  ({ home, research, people, news, life })[page]?.();
+  /* ---------- partners ---------- */
+  async function partners() {
+    const groups = await load('partners');
+    const mono = (n) => n.replace(/\b(the|for|of|and|at)\b/gi, '').split(/\s+/).filter(Boolean).map((w) => w[0]).join('').slice(0, 3).toUpperCase();
+    $('#partners').innerHTML = groups.map((g) => `<h2 style="margin-top:56px">${esc(g.group)}</h2><div class="partners">${g.items.map((p) => {
+      const inner = `<span class="mono" aria-hidden="true">${mono(p.name)}</span><h3>${esc(p.name)}</h3>${p.url ? '<span class="more">Visit website</span>' : ''}`;
+      return p.url ? `<a class="partner reveal" href="${esc(p.url)}" target="_blank" rel="noopener">${inner}</a>` : `<div class="partner reveal">${inner}</div>`;
+    }).join('')}</div>`).join('');
+    reveal();
+  }
+
+  ({ home, research, people, news, life, partners })[page]?.();
   reveal();
 })();
