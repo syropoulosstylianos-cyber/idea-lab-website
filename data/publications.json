@@ -1,5 +1,17 @@
 [
  {
+  "n": 106,
+  "year": 2026,
+  "authors": "Reinson, H., Post, T., Mazar, N., Reeck, C., Syropoulos, S., Saulitis, A., Shah, A., & Uusberg, A.",
+  "title": "Behavioural messages amplify tax incentives: A nationwide megastudy of retirement savings reminders",
+  "journal": "Nature Communications",
+  "url": "https://www.researchsquare.com/article/rs-8008072/latest",
+  "cite": "Reinson, H., Post, T., Mazar, N., Reeck, C., <strong>Syropoulos, S.</strong>, Saulitis, A., Shah, A., &amp; Uusberg, A. (2026). Behavioural messages amplify tax incentives: A nationwide megastudy of retirement savings reminders. <em>Nature Communications, Accepted for Publication.</em> <a href=\"https://www.researchsquare.com/article/rs-8008072/latest\" target=\"_blank\" rel=\"noopener\">https://www.researchsquare.com/article/rs-8008072/latest</a>",
+  "media": [],
+  "mentee": false,
+  "topics": []
+ },
+ {
   "n": 105,
   "year": 2026,
   "authors": "*McLamore, Q., *Syropoulos. S., ‡Law, K.F., Leidner, B., van Bezouw, M., Paladino, M. P., Rovenpor, D., Baumert, A., Bilewicz, M., Bilgen, A., Chatard, A., Chekroun, P., Chinchilla, J., Choi, H.-S., Euh. H., Gomez, A., Kardos, P., Khoo, Y.H., Li, M., Legal, J.-B., Loughnan, S., Mari, S., Tan-Mansukhani, R., Muldoon, O., Noor, M., Petrovic, N., Selvanathan, H.P., Ulug, O.M., Wohl, M., Yeung, W.L.V., Young, K. & Zein, R. A.",
@@ -14,20 +26,6 @@
  {
   "n": 104,
   "year": 2026,
-  "authors": "‡Law, K.F., Young, L., & Syropoulos, S.",
-  "title": "Who cares about the future? A large-scale investigation into the sociodemographic predictors of self- and other-oriented future concern",
-  "journal": "Futures",
-  "url": "https://doi.org/10.1016/j.futures.2026.103975",
-  "cite": "<sup>‡</sup>Law, K. F., Young, L., &amp; <strong>Syropoulos, S.</strong> (2026). Who cares about the future? A large-scale investigation into the sociodemographic predictors of self- and other-oriented future concern. <em>Futures, 185</em>, 103975. <a href=\"https://doi.org/10.1016/j.futures.2026.103975\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.1016/j.futures.2026.103975</a>",
-  "media": [],
-  "mentee": true,
-  "topics": [
-   "future"
-  ]
- },
- {
-  "n": 103,
-  "year": 2026,
   "authors": "Holzknecht, A., Schwaiger, R., Blanco, E., Huber, J., Kirchler, M., & ManyDesignsCarbon Team",
   "title": "Collective Evidence on Behavioral Interventions Targeting Carbon Pricing Support: A Many-Designs Approach with 55 Studies",
   "journal": "Nature Human Behaviour",
@@ -40,7 +38,7 @@
   ]
  },
  {
-  "n": 102,
+  "n": 103,
   "year": 2026,
   "authors": "‡Law, K. F., ††Wang, Z., Rogers, B., Young, L., Goya-Tochetto, D., Amormino, P., & Syropoulos, S.",
   "title": "Impartial Intergenerational Beneficence as a Source of Work Meaningfulness",
@@ -55,7 +53,7 @@
   ]
  },
  {
-  "n": 101,
+  "n": 102,
   "year": 2026,
   "authors": "††Wang, Z., ‡Law, K. F., Young, L., & Syropoulos, S.",
   "title": "Investigating Relationships Between Moral Foundations and Support for Revenge",
@@ -66,6 +64,20 @@
   "mentee": true,
   "topics": [
    "morality"
+  ]
+ },
+ {
+  "n": 101,
+  "year": 2026,
+  "authors": "‡Law, K.F., Young, L., & Syropoulos, S.",
+  "title": "Who cares about the future? A large-scale investigation into the sociodemographic predictors of self- and other-oriented future concern",
+  "journal": "Futures",
+  "url": "https://doi.org/10.1016/j.futures.2026.103975",
+  "cite": "<sup>‡</sup>Law, K. F., Young, L., &amp; <strong>Syropoulos, S.</strong> (2026). Who cares about the future? A large-scale investigation into the sociodemographic predictors of self- and other-oriented future concern. <em>Futures, 185</em>, 103975. <a href=\"https://doi.org/10.1016/j.futures.2026.103975\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.1016/j.futures.2026.103975</a>",
+  "media": [],
+  "mentee": true,
+  "topics": [
+   "future"
   ]
  },
  {
