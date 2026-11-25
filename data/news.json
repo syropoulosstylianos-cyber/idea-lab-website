@@ -3,6 +3,12 @@
   "month": "November",
   "year": 2026,
   "cat": "publication",
+  "html": "Stelios and Kyle were part of the ManyDesignsCarbon Team, a large collaboration that published a paper in <a href=\"https://doi.org/10.1038/s41562-026-02629-8\" target=\"_blank\" rel=\"noopener\">Nature Human Behaviour</a> comparing 55 crowdsourced study designs that test how to increase support for carbon pricing in the USA! Their intervention produced a small but significant effect!"
+ },
+ {
+  "month": "November",
+  "year": 2026,
+  "cat": "publication",
   "html": "Lab alum Kyle and Stelios, together with Liane Young, published a paper in <a href=\"https://doi.org/10.1016/j.futures.2026.103975\" target=\"_blank\" rel=\"noopener\">Futures</a> on the sociodemographic predictors of self- and other-oriented future concern!"
  },
  {
