@@ -26,20 +26,6 @@
  {
   "n": 104,
   "year": 2026,
-  "authors": "Holzknecht, A., Schwaiger, R., Blanco, E., Huber, J., Kirchler, M., & ManyDesignsCarbon Team",
-  "title": "Collective Evidence on Behavioral Interventions Targeting Carbon Pricing Support: A Many-Designs Approach with 55 Studies",
-  "journal": "Nature Human Behaviour",
-  "url": null,
-  "cite": "Holzknecht, A., Schwaiger, R., Blanco, E., Huber, J., Kirchler, M., &amp; <strong>ManyDesignsCarbon Team, </strong>(2026).<strong> </strong>Collective Evidence on Behavioral Interventions Targeting Carbon Pricing Support: A Many-Designs Approach with 55 Studies. <em>Nature Human Behaviour, Accepted for Publication</em>",
-  "media": [],
-  "mentee": false,
-  "topics": [
-   "climate"
-  ]
- },
- {
-  "n": 103,
-  "year": 2026,
   "authors": "‡Law, K. F., ††Wang, Z., Rogers, B., Young, L., Goya-Tochetto, D., Amormino, P., & Syropoulos, S.",
   "title": "Impartial Intergenerational Beneficence as a Source of Work Meaningfulness",
   "journal": "Journal of Business and Psychology",
@@ -53,7 +39,7 @@
   ]
  },
  {
-  "n": 102,
+  "n": 103,
   "year": 2026,
   "authors": "††Wang, Z., ‡Law, K. F., Young, L., & Syropoulos, S.",
   "title": "Investigating Relationships Between Moral Foundations and Support for Revenge",
@@ -64,6 +50,20 @@
   "mentee": true,
   "topics": [
    "morality"
+  ]
+ },
+ {
+  "n": 102,
+  "year": 2026,
+  "authors": "Holzknecht, A., Schwaiger, R., Blanco, E., Huber, J., Kirchler, M., & ManyDesignsCarbon Team",
+  "title": "Collective Evidence on Behavioral Interventions Targeting Carbon Pricing Support: A Many-Designs Approach with 55 Studies",
+  "journal": "Nature Human Behaviour",
+  "url": "https://doi.org/10.1038/s41562-026-02629-8",
+  "cite": "Holzknecht, A., Schwaiger, R., Blanco, E., Huber, J., Kirchler, M., &amp; ManyDesignsCarbon Team, (2026). Collective Evidence on Behavioral Interventions Targeting Carbon Pricing Support: A Many-Designs Approach with 55 Studies. <em>Nature Human Behaviour, Advance Online Publication.</em> <a href=\"https://doi.org/10.1038/s41562-026-02629-8\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.1038/s41562-026-02629-8</a>",
+  "media": [],
+  "mentee": false,
+  "topics": [
+   "climate"
   ]
  },
  {
